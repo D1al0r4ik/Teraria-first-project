@@ -164,8 +164,31 @@ color: grey;
   background-image: url(src/значок\ терарии.jpg);
 }
 
+header a:hover{
+  animation: slide 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  0%{
+    border-radius: 0px;
+    transform: translateY(0px) scale(1) rotate(10deg);
+  }
+  50%{
+    transform: translateY(5px) scale(1.05) rotate(10deg);
+  }
+  100%{
+    transform: translateY(0px) scale(1)rotate(10deg);
+  }
+}
 
 
+.star {
+  width: 30px;
+  position: absolute;
+  right: 5px;
+  top: 106px;
+}
 
 
 
